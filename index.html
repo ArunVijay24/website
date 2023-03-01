@@ -2,27 +2,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>zotworksprivateltd</title>
-  <meta charset="utf-8">
+  <!-- title of tab  content-->
+  <title>Zot Works Private Limited</title>
+  <!-- title of tab icon -->
+  <link rel="shortcut icon" href="/ZotLogo.jpg">
+  <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- External CSS-->
   <link href="style.css" rel= "stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <!-- Bootstrap minified CSS link from CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
   <div class="container">
-    <div class="row d-flex">
-      <div class="col-md-4">.<button>somelogo</button></div>
-      <div class="col-md-4">.zotworkspublications</div>
-      <div class="col-md-4">.call @ 999-999-9999</div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">.Authorlist</div>
-        <div class="col-md-4">.<button>🈳</button></div>
-        <div class="col-md-4">.<button>search</button></div>
+    <div class="container">
+    <nav class="navbar sticky-top navbar-dark bg-light">
+        <button class="nav-item rounded"><img src="./ZotLogo.jpg" alt="zotlogo" class="zotlogo img-thumbnail"></button>  
+        <div class="nav-item">Zot Works Publications</div>
+        <div class="nav-item">Call us @ 999-999-9999</div>
+    </nav> 
     </div>
-
+    <div class="container">
+        <nav class="navbar navbar-dark bg-light">
+            <div class="nav-item">Authors List</div>
+            <form class="form-inline my-2 my-lg-0 d-flex">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+    </div>
 <table class="table table-bordered">
     <thead>
      <tr>
@@ -54,5 +63,7 @@
   </tbody>
 </table>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
+
 </body>
 </html>
