@@ -1,3 +1,4 @@
+// Fetching API data
 fetch("https://openlibrary.org/search/authors.json?q=j%20k%20rowling")
 	.then((response) => {
 		return response.json();
@@ -18,3 +19,31 @@ fetch("https://openlibrary.org/search/authors.json?q=j%20k%20rowling")
 		});
 		document.getElementById("table-body").innerHTML = tableData;
 	});
+
+function filter() {
+	var searchBox, filter, table, tr, td, i, txtValue;
+
+	// declare elements
+	searchBox = document.getElementById("searchBox");
+	filter = searchBox.value.toUpperCase();
+	table = document.getElementById("myTable");
+	tr = table.getElementsByTagName("tr");
+	for (i = 0; i < tr.length; i++) {
+		td = tr[i].getElementsByTagName("td")[0];
+		if (td) {
+			txtValue = td.textContent || td.innerText;
+			if (txtValue.toUpperCase().indexOf(filter) > -1) {
+				tr[i].style.display = "";
+			} else {
+				tr[i].style.display = "none";
+			}
+		}
+	}
+}
+
+let btn = document.getElementById("btn");
+btn.addEventListener("click", (event) => {
+	// for prevent page reloads
+	event.preventDefault();
+	filter();
+});

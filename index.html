@@ -15,24 +15,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
-  <div class="container">
-    <div class="container">
+  <div>
     <nav class="navbar sticky-top navbar-dark bg-light">
-        <button class="nav-item rounded"><img src="./ZotLogo.jpg" alt="zotlogo" class="zotlogo img-thumbnail img-fluid"></button>  
+        <div class="container border-bottom border-dark my-3 py-2">
+        <img src="./ZotLogo.jpg" alt="zotlogo" class=" nav-item zotlogo img-thumbnail rounded float-start"> 
         <div class="nav-item">Zot Works Publications</div>
         <div class="nav-item">Call us @ 999-999-9999</div>
+    </div>
+    <div class="container my-3">
+    <div class="nav-item">Authors List</div>
+    <form class="form-inline my-2 my-lg-0 d-flex">
+        <input id="searchBox" class="form-control mr-sm-2" type="search" placeholder="Search by Author ID" aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" id="btn">Search</button>
+    </form>
+    </div>
     </nav> 
     </div>
-    <div class="container">
-        <nav class="navbar navbar-dark bg-light">
-            <div class="nav-item">Authors List</div>
-            <form class="form-inline my-2 my-lg-0 d-flex">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </nav>
-    </div>
-<table class="table table-bordered">
+<table class="table table-bordered" id="myTable">
     <thead class="table-dark">
      <tr>
         <th>Author Id</th>
