@@ -9,12 +9,12 @@ fetch("https://openlibrary.org/search/authors.json?q=j%20k%20rowling")
 		console.log(docs);
 		docs[0].map((doc) => {
 			tableData += `<tr>
-            <td>${doc.key ? doc.key : "-"}</td>
-            <td>${doc.name ? doc.name : "-"}</td>
-            <td>${doc.name ? doc.name : "-"}</td>
-            <td>${doc.name ? doc.name : "-"}</td>
-            <td>${doc.top_subjects ? doc.top_subjects : "-"}</td>
-            <td>${doc.top_work ? doc.top_work : "-"}</td>
+            <td class="text-center">${doc.key ? doc.key : "-"}</td>
+            <td class="text-center">${doc.name ? doc.name : "-"}</td>
+            <td class="text-center">${doc.name ? doc.name : "-"}</td>
+            <td class="text-center">${doc.name ? doc.name : "-"}</td>
+            <td class="text-center">${doc.top_subjects ? doc.top_subjects : "-"}</td>
+            <td class="text-center">${doc.top_work ? doc.top_work : "-"}</td>
           </tr>`;
 		});
 		document.getElementById("table-body").innerHTML = tableData;
