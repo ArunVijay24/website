@@ -15,36 +15,44 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
-  <div>
+  <div class="website">
     <nav class="navbar sticky-top navbar-dark bg-light">
-        <div class="container border-bottom border-dark my-3 py-2">
+        <div class="container border-bottom border-dark mb-3 py-2">
         <img src="./ZotLogo.jpg" alt="zotlogo" class=" nav-item zotlogo img-thumbnail rounded float-start"> 
         <a class="navbar-brand text-dark" href="/index.html">Zot Works Publications</a>
         <a class="navbar-brand text-dark" href="#">Call us @ 999-999-9999</a>
     </div>
-    <div class="container my-3">
+    <div class="container my-2">
     <a class="navbar-brand text-dark" href="#">Authors List</a>
-    <form class="form-inline my-2 my-lg-0 d-flex">
-        <input id="searchBox" class="form-control mr-sm-2" type="search" placeholder="Search by Author ID" aria-label="Search">
-        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" id="btn">Search</button>
+    <form class="form-inline d-flex">
+        <div class="row">
+            <div class="col-9">
+        <input id="searchBox" class="form-control" type="search" placeholder="Search by Author Name" aria-label="Search">
+    </div>
+        <div class="col-3">
+        <button class="btn btn-outline-primary" type="submit" id="btn">Search</button>
+    </div>
+    </div>
     </form>
     </div>
     </nav> 
     </div>
+<div class="container table-container">
 <table class="table table-bordered" id="myTable">
-    <thead class="table-dark ">
+    <thead class="table-dark">
      <tr>
-        <th class="text-center">Author Id</th>
-        <th class="text-center">First Name</th>
-        <th class="text-center">Last Name</th>
-        <th class="text-center">Display Name</th>
-        <th class="text-center">Works</th>
-        <th class="text-center">Titles</th>
+        <th class="text-center header" scope="col">Author ID</th>
+        <th class="text-center header" scope="col">First Name</th>
+        <th class="text-center header" scope="col">Last Name</th>
+        <th class="text-center header" scope="col">Display Name</th>
+        <th class="text-center header" scope="col">Works</th>
+        <th class="text-center header" scope="col">Titles</th>
       </tr>
     </thead>
   <tbody id="table-body">
   </tbody>
 </table>
+</div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
 <script src="scripts.js"></script>

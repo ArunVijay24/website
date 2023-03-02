@@ -15,7 +15,15 @@
 	border: 1px solid #ddd;
 	margin-bottom: 12px;
 }
-
+.header {
+	position: sticky;
+	top: 0;
+}
+.table-container {
+	width: 100vw;
+	height: 70vh;
+	overflow: auto;
+}
 #myTable {
 	border-collapse: collapse;
 	width: 100%;
@@ -23,7 +31,6 @@
 	font-size: 18px;
 	overflow-y: auto;
 }
-
 #myTable th,
 #myTable td {
 	text-align: left;
